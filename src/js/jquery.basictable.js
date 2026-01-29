@@ -200,9 +200,9 @@
       if (!vars.noResize) {
         check(table, table.data('basictable'))
 
-        $(window).bind('resize.basictable', function () {
-          resize(table)
-        })
+        $(window).on("resize.basictable", function() {
+          resize(table);
+        });
       }
     })
   }
